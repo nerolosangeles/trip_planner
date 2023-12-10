@@ -1,0 +1,38 @@
+#trip-planner {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+#destination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.destination-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.destination-details {
+    flex-grow: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0 5px;
+    cursor: pointer;
+}
