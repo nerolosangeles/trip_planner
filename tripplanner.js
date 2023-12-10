@@ -17,7 +17,7 @@ function addDestination() {
     // Sort destinations by arrival date
     destinations.sort((a, b) => new Date(a.arrivalDate) - new Date(b.arrivalDate));
 
-    // Update the UI with sorted destinations
+    // Call updateDestinationList to display the updated list
     updateDestinationList();
 
     // Clear the form
@@ -25,7 +25,8 @@ function addDestination() {
 }
 
 function updateDestinationList() {
-    document.getElementById("destination-list").innerHTML = "";
+    const destinationList = document.getElementById("destination-list");
+    destinationList.innerHTML = ""; // Clear previous list
 
     for (const destination of destinations) {
         const destinationItem = document.createElement("li");
@@ -43,7 +44,7 @@ function updateDestinationList() {
 
         // Add edit and delete buttons (optional)
 
-        document.getElementById("destination-list").appendChild(destinationItem);
+        destinationList.appendChild(destinationItem);
     }
 }
 
