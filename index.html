@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="trip-planner">
+        <h1>My Trip</h1>
+        <ul id="destination-list"></ul>
+        <form id="add-destination-form">
+            <label for="destination-name">Destination name:</label>
+            <input type="text" id="destination-name" required>
+            <label for="arrival-date">Arrival date:</label>
+            <input type="date" id="arrival-date" required>
+            <label for="departure-date">Departure date:</label>
+            <input type="date" id="departure-date" required>
+            <button id="add-destination">Add Destination</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
